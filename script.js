@@ -7,9 +7,9 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
   // Allowed usernames and passwords
   if (
-    (username === "ICT" && password === "1025") ||
+    (username === "ICT" && password === "2424") ||
     (username === "ICT2" && password === "8899") ||
-    (username === "ICT3" && password === "8899")
+    (username === "khati chhas gang" && password === "4899")
   ) {
     message.style.color = "green";
     message.textContent = "Login successful! Redirecting...";
@@ -27,4 +27,5 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     message.textContent = "Invalid username or password!";
   }
 });
+
 

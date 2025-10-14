@@ -1,63 +1,122 @@
-
-/* Responsive Grid */
-@media (max-width: 1024px) {
-  .paper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .paper {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+/* ===== Base Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #2980b9, #6dd5fa, #ffffff);
-  height: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* ===== Login Container ===== */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* ===== Login Box ===== */
 .login-box {
-  background: white;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  width: 300px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* ===== Input Box ===== */
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* ===== Button ===== */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* ===== Extra Links ===== */
+.extra-links {
+  margin-top: 20px;
   text-align: center;
 }
 
-.input-box {
-  margin: 15px 0;
+.extra-links a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
 }
 
-input {
-  width: 90%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
+.extra-links a:hover {
+  text-decoration: underline;
 }
 
-button {
-  background: #2980b9;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #1c598a;
-}
-
+/* ===== Message ===== */
 #message {
+  text-align: center;
   margin-top: 10px;
   color: red;
-  font-weight: bold;
+  font-size: 14px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+  .login-box {
+    padding: 20px;
+  }
+
+  .login-box h2 {
+    font-size: 22px;
+  }
+
+  .input-box input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .login-btn {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .extra-links a {
+    font-size: 13px;
+  }
 }

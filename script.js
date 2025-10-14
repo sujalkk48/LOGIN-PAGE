@@ -8,6 +8,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
   // Allowed usernames and passwords
   if (
     (username === "ICT" && password === "2424") ||
+    (username === "sujal" && password === "2024") ||
     (username === "ICT2" && password === "8899") ||
     (username === "khati chhas gang" && password === "4899")
   ) {
@@ -27,5 +28,6 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     message.textContent = "Invalid username or password!";
   }
 });
+
 
 

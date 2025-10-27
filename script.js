@@ -7,10 +7,10 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
   // Allowed usernames and passwords
   if (
-    (username === "ICT" && password === "2424") ||
+    (username === "ICT" && password === "1234") ||
     (username === "sujal" && password === "2024") ||
-    (username === "ICT2" && password === "8899") ||
-    (username === "khati chhas gang" && password === "4899")
+    (username === "student" && password === "2528") ||
+    (username === "only five" && password === "4899")
   ) {
     message.style.color = "green";
     message.textContent = "Login successful! Redirecting...";
